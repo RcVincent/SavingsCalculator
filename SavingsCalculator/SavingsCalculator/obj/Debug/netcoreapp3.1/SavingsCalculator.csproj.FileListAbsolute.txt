@@ -1,0 +1,11 @@
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\bin\Debug\netcoreapp3.1\SavingsCalculator.exe
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\bin\Debug\netcoreapp3.1\SavingsCalculator.deps.json
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\bin\Debug\netcoreapp3.1\SavingsCalculator.runtimeconfig.json
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\bin\Debug\netcoreapp3.1\SavingsCalculator.runtimeconfig.dev.json
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\bin\Debug\netcoreapp3.1\SavingsCalculator.dll
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\bin\Debug\netcoreapp3.1\SavingsCalculator.pdb
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.csprojAssemblyReference.cache
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.AssemblyInfoInputs.cache
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.AssemblyInfo.cs
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.dll
+C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.pdb
