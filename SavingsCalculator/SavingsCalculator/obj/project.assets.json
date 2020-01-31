@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ryan\\source\\repos\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\Ryan\\Source\\Repos\\SavingsCalculator2\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
       "projectName": "SavingsCalculator",
-      "projectPath": "C:\\Users\\Ryan\\source\\repos\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
+      "projectPath": "C:\\Users\\Ryan\\Source\\Repos\\SavingsCalculator2\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
       "packagesPath": "C:\\Users\\Ryan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ryan\\source\\repos\\SavingsCalculator\\SavingsCalculator\\obj\\",
+      "outputPath": "C:\\Users\\Ryan\\Source\\Repos\\SavingsCalculator2\\SavingsCalculator\\SavingsCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

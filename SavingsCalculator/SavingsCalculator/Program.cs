@@ -43,6 +43,7 @@ namespace SavingsCalculator
             return govtCut;
         }
 
+        //Function to handle the NJ tax brackets 
         static double NJStatesCut(double salary)
         {
             double rate = 0, stateCut = 0;
@@ -103,11 +104,11 @@ namespace SavingsCalculator
             adjsustedEarnings = salary - govCut;
             Console.WriteLine("After federal taxes your income is " + adjsustedEarnings);
 
-            if(state.Equals("NJ") || state.Equals("nj"))
+            if(state.Equals("NJ", StringComparison.InvariantCultureIgnoreCase))
             {
                 stateCut = NJStatesCut(adjsustedEarnings);
             }
-            else if(state.Equals("PA") || state.Equals("pa"))
+            else if(state.Equals("PA", StringComparison.InvariantCultureIgnoreCase))
             {
                 stateCut = PAStateCut(adjsustedEarnings);
             }
@@ -124,7 +125,7 @@ namespace SavingsCalculator
             Console.Write("Do you pay any rent?");
             String isRent = Console.ReadLine();
 
-            if(isRent.Contains("y") || isRent.Contains("Y")) {
+            if(isRent.Equals("Yes", StringComparison.InvariantCultureIgnoreCase)) {
                 Console.Write("Enter your monthly rent payment: ");
                 double rent = Convert.ToDouble(Console.Read());
 
@@ -146,7 +147,7 @@ namespace SavingsCalculator
             Console.Write("Do you have any loan payments?");
             String isLoan = Console.ReadLine();
 
-            if(isLoan.Contains("y") || isLoan.Contains("Y")) {
+            if(isLoan.Equals("Yes", StringComparison.InvariantCultureIgnoreCase)) {
                 Console.Write("Please enter your loan payment: ");
                 double loan = Convert.ToDouble(Console.ReadLine());
 
@@ -164,6 +165,55 @@ namespace SavingsCalculator
 
                 }
             }
+
+            Console.Write("Do you have any vehicle payments?");
+            String isVeh = Console.ReadLine();
+
+            if(isVeh.Equals("Yes", StringComparison.InvariantCultureIgnoreCase) )
+            {
+                Console.Write("What is your vehicle Payment(s): ");
+                double vP = Convert.ToDouble(Console.ReadLine());
+
+                if(vP > monthlyIncome)
+                {
+                    Console.WriteLine("Your vehincle payment(s) is higher than your monthly income, please re-evaluate your finances.");
+                    return;
+                }
+                else
+                {
+                    adjsustedEarnings -= (12 * vP);
+                    Console.WriteLine("After factoring in the year of vehicle payments, your adjusted income is: "+ adjsustedEarnings);
+                    monthlyIncome = adjsustedEarnings / 12;
+                    weeklyIncome = adjsustedEarnings / 52;
+                    Console.WriteLine("Weekly Income: " + weeklyIncome);
+                    Console.WriteLine("Monthly Income: " + monthlyIncome);
+                }
+            }
+
+            Console.Write("Do you make any payments for insurance?");
+            String isInsurance = Console.ReadLine();
+
+            if (isInsurance.Equals("Yes", StringComparison.InvariantCultureIgnoreCase)) {
+                Console.Write("Please enter your insurance payment(s) amount: ");
+                double insurancePayment = Convert.ToDouble(Console.ReadLine());
+
+                if(insurancePayment > monthlyIncome)
+                {
+                    Console.WriteLine("Your insurance payment(s) are higher than your monthly income, please re-evaluate your finances.");
+                    return;
+                } else {
+                    adjsustedEarnings -= (12 * insurancePayment);
+                    Console.WriteLine("After factoring in the year of insurance payments, your adjusted income is: " +adjsustedEarnings);
+                    monthlyIncome = adjsustedEarnings / 12;
+                    weeklyIncome = adjsustedEarnings / 52;
+                    Console.WriteLine("Weekly Income: " + weeklyIncome);
+                    Console.WriteLine("Monthly Income: " + monthlyIncome);
+
+                }
+            }
+
+            Console.Write("");
+            
         }
     }
 
