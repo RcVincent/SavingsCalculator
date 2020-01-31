@@ -130,6 +130,7 @@ namespace SavingsCalculator
 
                 if(rent > monthlyIncome) {
                     Console.WriteLine("Your rent is more than your monthly income. You should re-evaluate your finances.");
+                    return;
                 } else {
                     adjsustedEarnings -= (rent * 12); 
                     weeklyIncome = adjsustedEarnings / 52;
@@ -146,7 +147,22 @@ namespace SavingsCalculator
             String isLoan = Console.ReadLine();
 
             if(isLoan.Contains("y") || isLoan.Contains("Y")) {
+                Console.Write("Please enter your loan payment: ");
+                double loan = Convert.ToDouble(Console.ReadLine());
 
+                if(loan > monthlyIncome) {
+                    Console.WriteLine("Your loan payments are higher than your income, you should re-evaluate your finances.");
+                    return;
+                }
+                else {
+                    adjsustedEarnings -= (loan * 12);
+                    Console.WriteLine("After factoring in the year loan payments, your adjusted income is: "+ adjsustedEarnings);
+                    monthlyIncome = adjsustedEarnings / 12;
+                    weeklyIncome = adjsustedEarnings / 52;
+                    Console.WriteLine("Weekly Income: " + weeklyIncome);
+                    Console.WriteLine("Monthly Income: " + monthlyIncome);
+
+                }
             }
         }
     }
