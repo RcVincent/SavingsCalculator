@@ -116,6 +116,38 @@ namespace SavingsCalculator
             Console.Write("Your state taxes are " +stateCut +"so your adjusted earnings are " + adjsustedEarnings);
 
             double weeklyIncome = adjsustedEarnings / 52; 
+            double monthlyIncome = adjsustedEarnings / 12;
+
+            Console.WriteLine("Weekly Income: " + weeklyIncome);
+            Console.WriteLine("Monthly Income: " + monthlyIncome);
+
+            Console.Write("Do you pay any rent?");
+            String isRent = Console.ReadLine();
+
+            if(isRent.Contains("y") || isRent.Contains("Y")) {
+                Console.Write("Enter your monthly rent payment: ");
+                double rent = Convert.ToDouble(Console.Read());
+
+                if(rent > monthlyIncome) {
+                    Console.WriteLine("Your rent is more than your monthly income. You should re-evaluate your finances.");
+                } else {
+                    adjsustedEarnings -= (rent * 12); 
+                    weeklyIncome = adjsustedEarnings / 52;
+                    monthlyIncome = adjsustedEarnings / 12; 
+                    
+                    Console.Write("After the year of rent, income is adjusted to: " +adjsustedEarnings);
+                    Console.WriteLine("Weekly Income: " + weeklyIncome);
+                    Console.WriteLine("Monthly Income: " + monthlyIncome);
+
+                }
+            }
+
+            Console.Write("Do you have any loan payments?");
+            String isLoan = Console.ReadLine();
+
+            if(isLoan.Contains("y") || isLoan.Contains("Y")) {
+
+            }
         }
     }
 

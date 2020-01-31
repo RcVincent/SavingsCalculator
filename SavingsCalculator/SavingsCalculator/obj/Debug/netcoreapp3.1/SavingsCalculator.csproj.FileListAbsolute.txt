@@ -9,3 +9,8 @@ C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcore
 C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.AssemblyInfo.cs
 C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.dll
 C:\Users\Ryan\source\repos\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.pdb
+C:\Users\vinsa\Source\Repos\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.csprojAssemblyReference.cache
+C:\Users\vinsa\Source\Repos\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.AssemblyInfoInputs.cache
+C:\Users\vinsa\Source\Repos\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.AssemblyInfo.cs
+C:\Users\vinsa\Source\Repos\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.dll
+C:\Users\vinsa\Source\Repos\SavingsCalculator\SavingsCalculator\SavingsCalculator\obj\Debug\netcoreapp3.1\SavingsCalculator.pdb
