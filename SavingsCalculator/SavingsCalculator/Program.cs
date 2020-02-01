@@ -212,7 +212,23 @@ namespace SavingsCalculator
                 }
             }
 
-            Console.Write("");
+            Console.Write("How much on average do you spend a week on groceries?");
+            double foodBill = Convert.ToDouble(Console.ReadLine());
+
+            if(foodBill > weeklyIncome)
+            {
+                Console.WriteLine("Your food expenses are greater than your weekly earnings. Please remedy the situation.");
+                return;
+            }
+            else
+            {
+                adjsustedEarnings -= (foodBill * 52);
+                Console.WriteLine("After accounting for the food budget, you are left with "+ adjsustedEarnings + "for the year.");
+                monthlyIncome = adjsustedEarnings / 12;
+                weeklyIncome = adjsustedEarnings / 52;
+                Console.WriteLine("Weekly Income: " + weeklyIncome);
+                Console.WriteLine("Monthly Income: " + monthlyIncome);
+            }
             
         }
     }
