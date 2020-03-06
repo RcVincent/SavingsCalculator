@@ -8,25 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Ryan\\.nuget\\packages\\": {},
+    "C:\\Users\\vinsa\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ryan\\Source\\Repos\\SavingsCalculator2\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
+      "projectUniqueName": "C:\\Users\\vinsa\\Source\\Repos\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
       "projectName": "SavingsCalculator",
-      "projectPath": "C:\\Users\\Ryan\\Source\\Repos\\SavingsCalculator2\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
-      "packagesPath": "C:\\Users\\Ryan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ryan\\Source\\Repos\\SavingsCalculator2\\SavingsCalculator\\SavingsCalculator\\obj\\",
+      "projectPath": "C:\\Users\\vinsa\\Source\\Repos\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator.csproj",
+      "packagesPath": "C:\\Users\\vinsa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vinsa\\Source\\Repos\\SavingsCalculator\\SavingsCalculator\\SavingsCalculator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Ryan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vinsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],

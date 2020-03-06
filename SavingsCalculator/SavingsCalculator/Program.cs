@@ -114,7 +114,7 @@ namespace SavingsCalculator
             }
 
             adjsustedEarnings -= stateCut;
-            Console.Write("Your state taxes are " +stateCut +"so your adjusted earnings are " + adjsustedEarnings);
+            Console.Write("Your state taxes are " + stateCut +" so your adjusted earnings are " + adjsustedEarnings);
 
             double weeklyIncome = adjsustedEarnings / 52; 
             double monthlyIncome = adjsustedEarnings / 12;
@@ -137,8 +137,8 @@ namespace SavingsCalculator
                     weeklyIncome = adjsustedEarnings / 52;
                     monthlyIncome = adjsustedEarnings / 12; 
                     
-                    Console.Write("After the year of rent, income is adjusted to: " +adjsustedEarnings);
-                    Console.WriteLine("Weekly Income: " + weeklyIncome);
+                    Console.Write("After the year of rent, income is adjusted to: " + adjsustedEarnings);
+                    Console.WriteLine("Weekly Income: " + weeklyIncome); 
                     Console.WriteLine("Monthly Income: " + monthlyIncome);
 
                 }
@@ -157,7 +157,7 @@ namespace SavingsCalculator
                 }
                 else {
                     adjsustedEarnings -= (loan * 12);
-                    Console.WriteLine("After factoring in the year loan payments, your adjusted income is: "+ adjsustedEarnings);
+                    Console.WriteLine("After factoring in the year loan payments, your adjusted income is: " + adjsustedEarnings);
                     monthlyIncome = adjsustedEarnings / 12;
                     weeklyIncome = adjsustedEarnings / 52;
                     Console.WriteLine("Weekly Income: " + weeklyIncome);
@@ -203,7 +203,7 @@ namespace SavingsCalculator
                     return;
                 } else {
                     adjsustedEarnings -= (12 * insurancePayment);
-                    Console.WriteLine("After factoring in the year of insurance payments, your adjusted income is: " +adjsustedEarnings);
+                    Console.WriteLine("After factoring in the year of insurance payments, your adjusted income is: " + adjsustedEarnings);
                     monthlyIncome = adjsustedEarnings / 12;
                     weeklyIncome = adjsustedEarnings / 52;
                     Console.WriteLine("Weekly Income: " + weeklyIncome);
@@ -223,13 +223,32 @@ namespace SavingsCalculator
             else
             {
                 adjsustedEarnings -= (foodBill * 52);
-                Console.WriteLine("After accounting for the food budget, you are left with "+ adjsustedEarnings + "for the year.");
+                Console.WriteLine("After accounting for the food budget, you are left with "+ adjsustedEarnings + " for the year.");
                 monthlyIncome = adjsustedEarnings / 12;
                 weeklyIncome = adjsustedEarnings / 52;
                 Console.WriteLine("Weekly Income: " + weeklyIncome);
                 Console.WriteLine("Monthly Income: " + monthlyIncome);
             }
+
+            Console.Write("How much do you pay per week on gas? ");
+            double gasCost = Convert.ToDouble(Console.ReadLine());
             
+            if(gasCost > weeklyIncome)
+            {
+                Console.WriteLine("Your gas expenses are greater than your weekly earnings. Please remedy the situation.");
+                return;
+            }
+            else
+            {
+                adjsustedEarnings -= (gasCost * 52);
+                Console.WriteLine("After accounting for the fuel budget, you are left with " + adjsustedEarnings + " for the year.");
+                monthlyIncome = adjsustedEarnings / 12;
+                weeklyIncome = adjsustedEarnings / 52;
+                Console.WriteLine("Weekly Income: " + weeklyIncome);
+                Console.WriteLine("Monthly Income: " + monthlyIncome);
+
+            }
+
         }
     }
 
